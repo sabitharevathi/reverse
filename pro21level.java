@@ -9,16 +9,16 @@ public class pro21level {
 		Scanner aaa=new Scanner(System.in);
 		System.out.print("enter the size of array");
 		n=aaa.nextInt();
-		int ss[]=new int[n];
-		int a[]=new int[n];System.out.print("enter the value");
+		int ss1[]=new int[n];
+		int a1[]=new int[n];System.out.print("enter the value");
 	for(int i=0;i<n;i++){
 		
-		a[i]=aaa.nextInt();
+		a1[i]=aaa.nextInt();
 	}
 	for(int i=0;i<n;i++){
-		ss[i]=a[i];}
-	ArrayList<Integer> s=new ArrayList();
-	ArrayList<Integer> p=new ArrayList();
+		ss1[i]=a1[i];}
+	ArrayList<Integer> s1=new ArrayList();
+	ArrayList<Integer> p1=new ArrayList();
 	
 		int k=0,l=0;
 		int count=0;int j=1;
@@ -26,10 +26,10 @@ public class pro21level {
 		try{
 		if(count==0){
 		
-			if(a[i]>ss[j]){
+			if(a1[i]<ss1[j]){
 			
-				s.add(a[i]);
-				s.add(ss[j]);
+				s1.add(a1[i]);
+				s1.add(ss1[j]);
 				j++;
 				
 
@@ -41,7 +41,7 @@ public class pro21level {
 			
 			else
 			{
-				p.add(a[i]);
+				p1.add(a1[i]);
 				j++;
 				
 			}
@@ -54,9 +54,9 @@ public class pro21level {
 		System.out.println("not possible");
 		}
 
-		System.out.print(s);
+		System.out.print(s1);
 	
-		System.out.print(p);
+		System.out.print(p1);
 	}
 	
 
